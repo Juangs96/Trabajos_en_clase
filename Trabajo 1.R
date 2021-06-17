@@ -17,7 +17,7 @@ for (i in 1:fin) {
 ----------------------------
 #Punto 3.
     
-    Vector_Enteros = c(1L,2L,3L)
+    Vector_Enteros = c(1L,2L,3L) #C significa combinacion
     typeof(Vector_Enteros)
 ----------------------------
 #Punto 4.
@@ -49,9 +49,14 @@ for (i in 1:fin) {
       which(Numeros == 10) #Devuelve la posicion de los valores consultados
       which.max(Numeros2) #Devuelve la posiciòn del valor maximo
       which.min(Numeros3) #Devuelve la posicion del valor minimo
+      sqrt(Numeros3) #Raíz cuadrada del vector
 -----------------------------
 #Punto 8.
       Vector_100 = seq(1:100)
+      VectorSecuencia = 1:100
 -----------------------------
 #Punto 9.
       Vector_100_2 = seq(1,100, by = 10)
+      seq( 0,100, by = 10)
+      seq(0,100,10)
+      
