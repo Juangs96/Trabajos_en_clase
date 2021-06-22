@@ -56,6 +56,7 @@
   sd(mispacientes$glucemia)
   #desviacion estandar o tipica, es una medida que se utiliza para cuantificar la variacion o la dispercion de un conjunto de datos numericos
   round(sd(mispacientes$glucemia),2)
+  quantile(mispacientes$glucemia)
   
   FrecuenciaAbsoluta = table(mispacientes$glucemia) #
   FrecuenciaAbsoluta
