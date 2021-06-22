@@ -1,5 +1,12 @@
 #Practica 2
 ---------------------------
+#PArte 1.
+#Punto 1.
+  vectorPelicula = c("Sherk","Sherk 2","Sherk tercero","Sherk Felices")
+  VectorPuntuacion=c(7.9,7.2,6.1,6.3)
+  VectorEstreno = c(TRUE,TRUE,FALSE,FALSE)
+  
+  VectorPunto1 = data.frame(vectorPelicula,VectorPuntuacion,VectorEstreno)
 #Punto 2.
 #Punto a
   results=c("A","A", "B", "B", "B", "B", "B","I","I","I","R","I","I","I","R","R",
@@ -38,7 +45,7 @@
   
   print(vec_comision)
   
-#Punto 2 caso estadistico
+#Parte 2, Caso estadistico
   
   genero2 = c("M","M","M","M","M","F","F","F","F","F")
   
@@ -58,11 +65,14 @@
   round(sd(mispacientes$glucemia),2)
   quantile(mispacientes$glucemia)
   
-  FrecuenciaAbsoluta = table(mispacientes$glucemia) #
+  FrecuenciaAbsoluta = table(mispacientes$glucemia) 
   FrecuenciaAbsoluta
-  
-  FrecuenciaRelativa = FrecuenciaAbsoluta/length(results)
+  #el número de veces que aparece un valor
+  FrecuenciaAbsolutaGenero = table(mispacientes$genero2)
+  FrecuenciaRelativa = FrecuenciaAbsolutaGenero/length(mispacientes$genero2)
   FrecuenciaRelativa
+  #El resultado de dividir la frecuencia absoluta de un determinado valor entre el número total de datos
   
+#Parte 3.
   
-  
+  #Investigación sobre cómo mostrar gráficos
