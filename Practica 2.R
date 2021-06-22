@@ -38,3 +38,30 @@
   
   print(vec_comision)
   
+#Punto 2 caso estadistico
+  
+  genero2 = c("M","M","M","M","M","F","F","F","F","F")
+  
+  edad = c(18,20,22,24,26,26,28,30,32,34)
+
+  glucemia = c(123,230,180,164,210,220,193,202,152,185)
+  
+  tratamiento_antidiabeticos_orales = c(FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE)
+  
+  mispacientes = data.frame(genero2,edad,glucemia,tratamiento_antidiabeticos_orales)
+----------------  
+  max(glucemia)
+  min(glucemia)
+  mean(edad)
+  sd(mispacientes$glucemia)
+  #desviacion estandar o tipica, es una medida que se utiliza para cuantificar la variacion o la dispercion de un conjunto de datos numericos
+  round(sd(mispacientes$glucemia),2)
+  
+  FrecuenciaAbsoluta = table(mispacientes$glucemia) #
+  FrecuenciaAbsoluta
+  
+  FrecuenciaRelativa = FrecuenciaAbsoluta/length(results)
+  FrecuenciaRelativa
+  
+  
+  
